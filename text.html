@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خالد اللعيب | منقب تطبيقات الأندرويد</title>
+    <style>
+        :root {
+            --gold: #f1c40f;
+            --dark-blue: #2c3e50;
+            --light-grey: #ecf0f1;
+            --accent: #e67e22;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-grey);
+            margin: 0; padding: 0;
+            color: var(--dark-blue);
+        }
+
+        /* الهيدر */
+        header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        /* شبكة المقالات */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* كارت المقال */
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .app-image {
+            height: 180px;
+            background: linear-gradient(45deg, var(--dark-blue), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        .app-info {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .app-info h3 { margin-top: 0; color: var(--accent); }
+        .app-info p { font-size: 14px; line-height: 1.5; color: #666; }
+
+        /* الزرار المنفصل */
+        .btn-article {
+            display: block;
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-article:hover { background: var(--gold); color: var(--dark-blue); }
+
+        .badge {
+            background: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🔍 منقب تطبيقات الأندرويد</h1>
+    <p>نبحث في "قبر Google Play" لنستخرج لك كنوزاً برمجية منسية</p>
+</header>
+
+<div class="grid-container">
+    
+    <div class="app-card">
+        <div class="app-image">📁</div>
+        <div class="app-info">
+            <span class="badge">كنز مفقود</span>
+            <h3>مدير ملفات الـ JS السري</h3>
+            <p>تطبيق قديم كان يسمح بتشغيل أكواد JavaScript مباشرة على ملفات النظام.</p>
+            <a href="article1.html" class="btn-article">فتح المقال البرمجي</a>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-image">🛡️</div>
+        <div class="app-info">
+            <span class="badge">نادر جداً</span>
+            <h3>جدار الحماية المنسي</h3>
+            <p>أداة مفتوحة المصدر من عام 2018 كانت تحمي الخصوصية بشكل مذهل.</p>
+            <a href="article2.html" class="btn-article">اقرأ تحليل الكود</a>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-image">💻</div>
+        <div class="app-info">
+            <span class="badge">وحش البرمجة</span>
+            <h3>إحياء تطبيق Termux</h3>
+            <p>استخراج بيئة Linux كاملة من القبر لتشغيل سكريبتات البرمجة والاختراق الأخلاقي على هاتفك.</p>
+            <a href="article1.html" class="btn-article">فتح وحش البرمجة</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
